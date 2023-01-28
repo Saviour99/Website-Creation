@@ -1,0 +1,178 @@
+:root{
+    --btn:#e8491d;
+    --text:#ffffff;
+    --bg:#35424e;
+    --bg1:#f4f4f4;
+    --hr:#061f72;
+}
+body{
+    background-color: var(--bg1);
+    font: 15px/1.5 arial, helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+/* GLOBAL CODE */
+.container{
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: var(--bg);
+    color: var(--text);
+    border-bottom: 3px solid var(--btn);
+    padding: 10px;
+}
+header a{
+    color: var(--text);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold
+
+}header #branding{
+    display: inline;
+    float: left;
+}
+header img{
+    float: left;
+   
+    animation: rotate 2s infinite;
+}
+@keyframes rotate{
+   0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+header h1{
+    float: right;
+    font-size: 25px;
+    margin-top: 25px;
+    padding-left: 10px;
+}
+header nav{
+    float: right;
+    padding-top: 38px;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 15px 0 15px;
+}
+header .highlight, header .current a{
+    color: var(--btn);
+}
+header a:hover{
+    color: var(--hr);
+    font-weight: bold;
+}
+
+/* NEWSLETTER */
+
+#newsletters{
+    padding: 15px;
+    color: var(--text);
+    background-color: var(--bg);
+}
+#newsletters h2{
+    float: left;
+}
+#newsletters form{
+    float: right;
+    margin-top: 15px;
+}
+#newsletters input[type="email"]{
+    padding: 5px;
+    height: 25px;
+    width: 250px;
+}
+#newsletters ::placeholder{
+    font-weight: 400;
+}
+
+ .btn1{
+    background-color: var(--btn);
+    color: var(--text);
+    padding: 10px;
+    border: 0;
+    font-weight: 700;
+    font-size: 16px;
+}
+.btn1:hover{
+    background-color: var(--hr);
+    color: #ffffff;
+}
+
+.dark{
+    background-color: var(--bg);
+    padding: 15px;
+    color: var(--text);
+}
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 20px;
+
+}
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+width: 90%;
+padding: 5px;
+}
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+footer{
+    background-color: var(--btn);
+    color: var(--text);
+    padding: 20px;
+    margin-top: 80px;
+    text-align: center;
+}
+ul#services li{
+    background: #e6e6e6;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+/* SHOWCASE */
+#showcase{
+    min-height: 400px;
+    background: url(../images/typing.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: var(--text);
+}
+
+#showcase h2{
+    margin-top: 100px;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+#showcase p{
+    font-size: 20px;
+}
+
+#boxes{
+margin-top: 20px;
+}
+#boxes .box{
+    width: 30%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+#boxes .box img{
+    width: 90px;
+}
